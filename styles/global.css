@@ -10,14 +10,14 @@
     --font-baloo-2: "Baloo 2", sans-serif;
     --font-open-sans: "Open Sans", sans-serif;
 
-    --logo: 400 2.5rem/auto var(--font-leckerli-one);
+    --logo: 400 2.5rem/normal var(--font-leckerli-one);
 
-    --heading-md: 700 1.75rem/auto var(--font-baloo-2);
-    --headind-sm: 700 1.125rem/auto var(--font-baloo-2);
+    --heading-md: 700 1.75rem/normal var(--font-baloo-2);
+    --headind-sm: 700 1.125rem/normal var(--font-baloo-2);
 
-    --body-md: 400 1rem/auto var(--font-open-sans);
-    --body-sm: 400 0.875rem/auto var(--font-open-sans);
-    --body-xs: 400 0.75rem/auto var(--font-open-sans);
+    --body-md: 400 1rem/normal var(--font-open-sans);
+    --body-sm: 400 0.875rem/normal var(--font-open-sans);
+    --body-xs: 400 0.75rem/normal var(--font-open-sans);
 
     /* Brand */
 

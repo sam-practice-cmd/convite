@@ -11,6 +11,22 @@
 main {
   background-color: var(--shape-body);
   margin: 1.25rem;
+
+  border-radius: 0.75rem;
+
+  & .main-container {
+    margin-top: 5rem;
+
+    max-width: 35rem;
+    margin-left: 8.125rem;
+
+    h1 {
+      font: var(--heading-md);
+      color: var(--text-heading);
+
+      margin-bottom: 2.5rem;
+    }
+  }
 }
 
 aside {
@@ -21,8 +37,6 @@ aside {
     margin-right: 0;
     min-height: calc(100vh - 2.5rem);
 
-    display: grid;
-    align-content: start;
 
     & svg,
     h1,
@@ -36,10 +50,7 @@ aside {
     }
 
     & h1 {
-      font-family: var(--font-leckerli-one);
-      font-size: 2.5rem;
-      font-weight: 400;
-      line-height: auto;
+      font: var(--logo);
       color: var(--pink);
     }
 
@@ -47,7 +58,7 @@ aside {
       font-family: var(--font-open-sans);
       font-size: 1rem;
       font-weight: 300;
-      line-height: auto;
+      line-height: normal;
       color: var(--text-heading);
     }
   }

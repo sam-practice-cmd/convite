@@ -1,0 +1,25 @@
+fieldset {
+    border: none;
+
+    display: grid;
+    gap: 1.5rem;
+}
+
+.legend {
+    display: flex;
+    align-items: center;
+    gap: .75rem;
+
+    font: var(--headind-sm);
+    color: var(--text-heading);
+
+    & svg path {
+        fill: var(--input-placeholder);
+    }
+}
+
+
+
+fieldset + fieldset{
+    margin-top: 3rem;
+}
