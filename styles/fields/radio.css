@@ -1,0 +1,35 @@
+.radio-type{
+    display: flex;
+    background-color: var(--input-base);
+    border-radius: .5rem;
+    border: 1px solid var(--input-stroke);
+    padding: .48rem;
+
+}
+
+
+.type-inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    cursor: pointer;
+    gap: .5rem;
+
+    position: relative;
+    & input,
+    & input:focus,
+    & input:hover {
+        all: unset;
+        position: absolute;
+        inset: 0;
+    }
+
+    svg  {
+        max-width: 1rem;
+    }
+
+    label {
+        font: var(--body-sm);
+    }
+}
