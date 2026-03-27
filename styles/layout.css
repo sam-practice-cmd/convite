@@ -2,23 +2,26 @@
   display: grid;
   grid-template-columns: 32.8% 67.2%;
 
-  min-height: 100vh;
+  height: 100vh;
   overflow: hidden;
 
   background-color: var(--shape-background);
+  
 }
 
 main {
+  overflow: auto;
   background-color: var(--shape-body);
   margin: 1.25rem;
 
   border-radius: 0.75rem;
 
+  display: grid;
+  justify-content: center;
   & .main-container {
     margin-top: 5rem;
 
-    max-width: 35rem;
-    margin-left: 8.125rem;
+    min-width: 35rem;
 
     h1 {
       font: var(--heading-md);
