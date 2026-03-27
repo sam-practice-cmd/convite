@@ -68,3 +68,76 @@
     }
   }
 }
+
+/* Colors */
+
+.radio-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(2.5rem, 1fr));
+    gap: .75rem;
+}
+
+.radio-inner {
+    position: relative;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    & input,
+    & input:focus,
+    & input:hover {
+        all: unset;
+        position: absolute;
+        inset: 0;
+    }
+
+    &:hover {
+        outline: 2px solid var(--brand-light);
+    }
+
+    &:has(:checked) {
+        outline: 2px solid var(--brand-light);
+    }
+}
+
+.theme-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(7.8rem, 1fr));
+    gap: .5rem;
+}
+
+.theme-inner {
+    border: 1px solid var(--stroke-default);
+    border-radius: .5rem;
+
+    background-color: var(--input-stroke);
+
+    display: grid;
+    justify-items: center;
+    gap: .5rem;
+
+    padding: .125rem;
+
+    
+    position: relative;
+    & input,
+    & input:focus,
+    & input:hover {
+        all: unset;
+        position: absolute;
+        inset: 0;
+    }
+    img {
+        padding: .2rem;
+    }
+
+    &:hover {
+        outline: 2px solid var(--brand-light);
+    }
+
+    &:has(:checked) {
+        outline: 2px solid var(--brand-light);
+    }
+}
+
+
+

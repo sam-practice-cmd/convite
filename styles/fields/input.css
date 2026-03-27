@@ -7,37 +7,136 @@ label {
   font: var(--body-sm);
   color: var(--text-body);
   margin-bottom: 0.725rem;
-
 }
 
-input, textarea {
-    appearance: none;
-    width: 100%;
-    border-radius: .5rem;
+input,
+textarea {
+  appearance: none;
+  width: 100%;
+  border-radius: 0.5rem;
 
-    padding: .75rem 1rem;
+  padding: 0.75rem 1rem;
 
-    border: 2px solid transparent;
-    outline: 1px solid var(--input-stroke);
-    
-    background-color: var(--input-base);
+  border: 2px solid transparent;
+  outline: 1px solid var(--input-stroke);
 
-    font: var(--body-md);
-    color: var(--text-heading);
-    &::placeholder {
+  background-color: var(--input-base);
 
-      color: var(--input-placeholder);
-    }
-
+  font: var(--body-md);
+  color: var(--text-heading);
+  &::placeholder {
+    color: var(--input-placeholder);
+  }
 }
 
 input[type="date"]::placeholder {
-    color: var(--text-heading);
+  color: var(--text-heading);
 }
-
 
 input:focus,
 textarea:focus {
   outline: 1px solid var(--brand-light);
 }
 
+.dark {
+  display: flex;
+  align-items: center;
+
+  gap: 0.75rem;
+  margin-top: 1.5rem;
+  
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 26px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* Fundo do switch */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  inset: 0;
+  background-color: var(--text-heading);
+  border-radius: 34px;
+  transition: 0.3s;
+  box-shadow: 0 0 0 2px var(--input-stroke);
+}
+
+/* Bolinha */
+.slider::before {
+  content: "";
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  left: 3px;
+  top: 3px;
+  background-color: var(--input-stroke);
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+/* Quando estiver ligado */
+input:checked + .slider {
+  background-color: var(--input-base);
+}
+
+input:checked + .slider::before {
+  transform: translateX(24px);
+}
+
+.end-customization {
+  display: flex;
+  align-items: center;
+
+  gap: 1rem;
+}
+
+.file-upload {
+  display: flex;
+  align-items: center;
+  gap: 0.875rem;
+}
+
+.file-upload input[type="file"] {
+  display: none; /* esconde o input padrão */
+}
+
+.file-upload label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  font: var(--body-sm);
+  background-color: var(--shape-hover);
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+
+  margin-bottom: 0;
+}
+
+.file-upload label svg {
+  width: 1rem;
+  height: 1rem;
+  path {
+    fill: var(--brand-light);
+  }
+}
+
+.file-upload .file-name {
+  font: var(--body-md);
+  color: var(--text-body);
+}
+
+.file-upload .file-name:empty::before {
+  content: "Nenhum arquivo selecionado";
+  color: var(--input-placeholder); 
+}

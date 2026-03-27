@@ -17,7 +17,13 @@
     <div id="app">
       <aside>
         <div class="aside-container">
-          <svg width="85" height="88" viewBox="0 0 85 88" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg
+            width="85"
+            height="88"
+            viewBox="0 0 85 88"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
             <g clip-path="url(#clip0_2136_1705)">
               <path
                 d="M7.38739 22.6469C7.9033 22.6551 8.41568 22.5606 8.8947 22.3688C9.37372 22.1771 9.8098 21.8919 10.1775 21.53C10.5453 21.1681 10.8373 20.7366 11.0367 20.2607C11.236 19.7848 11.3387 19.274 11.3387 18.758C11.3387 18.242 11.236 17.7312 11.0367 17.2553C10.8373 16.7794 10.5453 16.3479 10.1775 15.986C9.8098 15.624 9.37372 15.3389 8.8947 15.1471C8.41568 14.9554 7.9033 14.8609 7.38739 14.8691C5.26258 14.9013 3.55676 16.633 3.55676 18.7581C3.55676 20.8833 5.26258 22.6147 7.38739 22.6469ZM66.9493 19.3505C67.4642 19.3571 67.9754 19.2614 68.4531 19.0689C68.9308 18.8764 69.3655 18.591 69.7319 18.2291C70.0984 17.8673 70.3894 17.4362 70.588 16.961C70.7866 16.4858 70.8888 15.9759 70.8887 15.4609C70.8886 14.9459 70.7863 14.436 70.5876 13.9609C70.3889 13.4857 70.0978 13.0548 69.7313 12.693C69.3647 12.3313 68.9299 12.0459 68.4522 11.8536C67.9744 11.6612 67.4632 11.5656 66.9483 11.5724C64.8235 11.6045 63.118 13.3366 63.118 15.4618C63.1183 17.5869 64.8245 19.3187 66.9493 19.3505Z"
@@ -72,7 +78,13 @@
           <form method="post" enctype="multipart/form-data">
             <fieldset class="event-info">
               <div class="legend">
-                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg
+                  width="32"
+                  height="32"
+                  viewBox="0 0 32 32"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
                   <path
                     fill-rule="evenodd"
                     clip-rule="evenodd"
@@ -84,17 +96,32 @@
               </div>
               <div class="input-wrapper">
                 <label for="title">Título</label>
-                <input type="text" name="title" id="title" placeholder="Nome do evento" />
+                <input
+                  type="text"
+                  name="title"
+                  id="title"
+                  placeholder="Nome do evento"
+                />
               </div>
 
               <div class="flex double-input">
                 <div class="input-wrapper flex-1">
                   <label for="start-date">Início</label>
-                  <input type="date" name="start-date" id="start-date" lang="pt-BR" />
+                  <input
+                    type="date"
+                    name="start-date"
+                    id="start-date"
+                    lang="pt-BR"
+                  />
                 </div>
                 <div class="input-wrapper flex-1">
                   <label for="end-date">Fim</label>
-                  <input type="date" name="end-date" id="end-date" lang="pt-BR" />
+                  <input
+                    type="date"
+                    name="end-date"
+                    id="end-date"
+                    lang="pt-BR"
+                  />
                 </div>
               </div>
 
@@ -103,8 +130,19 @@
                   <label>Tipo</label>
                   <div class="radio-type">
                     <div class="type-inner">
-                      <input type="radio" name="type" value="presencial" id="presencial" />
-                      <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <input
+                        type="radio"
+                        name="type"
+                        value="presencial"
+                        id="presencial"
+                      />
+                      <svg
+                        width="32"
+                        height="32"
+                        viewBox="0 0 32 32"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
                         <path
                           fill-rule="evenodd"
                           clip-rule="evenodd"
@@ -116,8 +154,19 @@
                     </div>
 
                     <div class="type-inner">
-                      <input type="radio" name="type" value="online" id="online" />
-                      <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <input
+                        type="radio"
+                        name="type"
+                        value="online"
+                        id="online"
+                      />
+                      <svg
+                        width="32"
+                        height="32"
+                        viewBox="0 0 32 32"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
                         <path
                           fill-rule="evenodd"
                           clip-rule="evenodd"
@@ -132,7 +181,12 @@
 
                 <div class="input-wrapper flex-1">
                   <label for="location">Local</label>
-                  <input type="text" name="location" id="location" placeholder="Link ou endereço" />
+                  <input
+                    type="text"
+                    name="location"
+                    id="location"
+                    placeholder="Link ou endereço"
+                  />
                 </div>
               </div>
 
@@ -145,6 +199,373 @@
                   rows="6"
                   placeholder="Escreva sobre os detalhes do evento"
                 ></textarea>
+              </div>
+            </fieldset>
+
+            <fieldset class="customization">
+              <div class="legend">
+                <svg
+                  width="32"
+                  height="32"
+                  viewBox="0 0 32 32"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M9.33335 3.66675C9.24495 3.66675 9.16016 3.70187 9.09765 3.76438C9.03514 3.82689 9.00002 3.91168 9.00002 4.00008V15.0001H23V4.00008C23 3.91167 22.9649 3.82689 22.9024 3.76438C22.8399 3.70187 22.7551 3.66675 22.6667 3.66675H19.6667V8.00008C19.6667 8.55237 19.219 9.00008 18.6667 9.00008C18.1144 9.00008 17.6667 8.55237 17.6667 8.00008V3.66675H14.3334V5.33341C14.3334 5.8857 13.8856 6.33341 13.3334 6.33341C12.7811 6.33341 12.3334 5.8857 12.3334 5.33341V3.66675H9.33335ZM9.33335 1.66675C8.71451 1.66675 8.12102 1.91258 7.68344 2.35017C7.24585 2.78775 7.00002 3.38124 7.00002 4.00008V15.2252C6.76099 15.3386 6.54075 15.4929 6.3501 15.6835C5.91252 16.1211 5.66669 16.7146 5.66669 17.3334V18.6667C5.66669 19.6392 6.053 20.5718 6.74063 21.2595C7.42826 21.9471 8.36089 22.3334 9.33335 22.3334H12C12.0884 22.3334 12.1732 22.3685 12.2357 22.431C12.2982 22.4936 12.3334 22.5783 12.3334 22.6667V26.5334C12.3334 27.5059 12.7197 28.4385 13.4073 29.1261C14.0949 29.8138 15.0276 30.2001 16 30.2001C16.9725 30.2001 17.9051 29.8138 18.5927 29.1261C19.2804 28.4385 19.6667 27.5059 19.6667 26.5334V22.6667C19.6667 22.5783 19.7018 22.4936 19.7643 22.431C19.8268 22.3685 19.9116 22.3334 20 22.3334H22.6667C23.6391 22.3334 24.5718 21.9471 25.2594 21.2595C25.947 20.5718 26.3334 19.6392 26.3334 18.6667V17.3334C26.3334 16.7146 26.0875 16.1211 25.6499 15.6835C25.4593 15.4929 25.2391 15.3386 25 15.2252V4.00008C25 3.38124 24.7542 2.78775 24.3166 2.35017C23.879 1.91258 23.2855 1.66675 22.6667 1.66675H9.33335ZM8.00002 17.0001C7.91162 17.0001 7.82683 17.0352 7.76432 17.0977C7.70181 17.1602 7.66669 17.245 7.66669 17.3334V18.6667C7.66669 19.1088 7.84228 19.5327 8.15484 19.8453C8.4674 20.1578 8.89133 20.3334 9.33335 20.3334H12C12.6189 20.3334 13.2123 20.5792 13.6499 21.0168C14.0875 21.4544 14.3334 22.0479 14.3334 22.6667V26.5334C14.3334 26.9754 14.5089 27.3994 14.8215 27.7119C15.1341 28.0245 15.558 28.2001 16 28.2001C16.442 28.2001 16.866 28.0245 17.1785 27.7119C17.4911 27.3994 17.6667 26.9754 17.6667 26.5334V22.6667C17.6667 22.0479 17.9125 21.4544 18.3501 21.0168C18.7877 20.5792 19.3812 20.3334 20 20.3334H22.6667C23.1087 20.3334 23.5326 20.1578 23.8452 19.8453C24.1578 19.5327 24.3334 19.1088 24.3334 18.6667V17.3334C24.3334 17.245 24.2982 17.1602 24.2357 17.0977C24.1732 17.0352 24.0884 17.0001 24 17.0001H8.00002Z"
+                    fill="white"
+                  />
+                </svg>
+
+                <legend>Personalização</legend>
+              </div>
+              <div class="input-wrapper">
+                <label>Cor principal</label>
+                <div class="radio-wrapper">
+                  <div class="radio-inner">
+                    <input type="radio" name="color" id="blue" />
+                    <svg
+                      width="40"
+                      height="40"
+                      viewBox="0 0 40 40"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <rect width="40" height="40" rx="20" fill="#2D3136" />
+                      <rect
+                        x="6"
+                        y="6"
+                        width="28"
+                        height="28"
+                        rx="14"
+                        fill="#59B2FF"
+                      />
+                    </svg>
+                  </div>
+                  <div class="radio-inner">
+                    <input type="radio" name="color" id="navy" />
+                    <svg
+                      width="40"
+                      height="40"
+                      viewBox="0 0 40 40"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <rect width="40" height="40" rx="20" fill="#2D3136" />
+                      <rect
+                        x="6"
+                        y="6"
+                        width="28"
+                        height="28"
+                        rx="14"
+                        fill="#6A59FF"
+                      />
+                    </svg>
+                  </div>
+                  <div class="radio-inner">
+                    <input type="radio" name="color" id="purple" />
+                    <svg
+                      width="40"
+                      height="40"
+                      viewBox="0 0 40 40"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <rect width="40" height="40" rx="20" fill="#2D3136" />
+                      <rect
+                        x="6"
+                        y="6"
+                        width="28"
+                        height="28"
+                        rx="14"
+                        fill="#B259FF"
+                      />
+                    </svg>
+                  </div>
+                  <div class="radio-inner">
+                    <input type="radio" name="color" id="fuschia" />
+                    <svg
+                      width="40"
+                      height="40"
+                      viewBox="0 0 40 40"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <rect width="40" height="40" rx="20" fill="#2D3136" />
+                      <rect
+                        x="6"
+                        y="6"
+                        width="28"
+                        height="28"
+                        rx="14"
+                        fill="#FF59F9"
+                      />
+                    </svg>
+                  </div>
+                  <div class="radio-inner">
+                    <input type="radio" name="color" id="pink" />
+                    <svg
+                      width="40"
+                      height="40"
+                      viewBox="0 0 40 40"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <rect
+                        x="1"
+                        y="1"
+                        width="38"
+                        height="38"
+                        rx="19"
+                        fill="#2D3136"
+                      />
+                      <rect
+                        x="6"
+                        y="6"
+                        width="28"
+                        height="28"
+                        rx="14"
+                        fill="#FF598B"
+                      />
+                    </svg>
+                  </div>
+                  <div class="radio-inner">
+                    <input type="radio" name="color" id="red" />
+                    <svg
+                      width="40"
+                      height="40"
+                      viewBox="0 0 40 40"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <rect width="40" height="40" rx="20" fill="#2D3136" />
+                      <rect
+                        x="6"
+                        y="6"
+                        width="28"
+                        height="28"
+                        rx="14"
+                        fill="#FF5959"
+                      />
+                    </svg>
+                  </div>
+                  <div class="radio-inner">
+                    <input type="radio" name="color" id="orange" />
+                    <svg
+                      width="40"
+                      height="40"
+                      viewBox="0 0 40 40"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <rect width="40" height="40" rx="20" fill="#2D3136" />
+                      <rect
+                        x="6"
+                        y="6"
+                        width="28"
+                        height="28"
+                        rx="14"
+                        fill="#FF8B59"
+                      />
+                    </svg>
+                  </div>
+                  <div class="radio-inner">
+                    <input type="radio" name="color" id="yellow" />
+                    <svg
+                      width="40"
+                      height="40"
+                      viewBox="0 0 40 40"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <rect width="40" height="40" rx="20" fill="#2D3136" />
+                      <rect
+                        x="6"
+                        y="6"
+                        width="28"
+                        height="28"
+                        rx="14"
+                        fill="#FFCD59"
+                      />
+                    </svg>
+                  </div>
+                  <div class="radio-inner">
+                    <input type="radio" name="color" id="lime" />
+                    <svg
+                      width="40"
+                      height="40"
+                      viewBox="0 0 40 40"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <rect width="40" height="40" rx="20" fill="#2D3136" />
+                      <rect
+                        x="6"
+                        y="6"
+                        width="28"
+                        height="28"
+                        rx="14"
+                        fill="#E1FF59"
+                      />
+                    </svg>
+                  </div>
+                  <div class="radio-inner">
+                    <input type="radio" name="color" id="green" />
+                    <svg
+                      width="40"
+                      height="40"
+                      viewBox="0 0 40 40"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <rect width="40" height="40" rx="20" fill="#2D3136" />
+                      <rect
+                        x="6"
+                        y="6"
+                        width="28"
+                        height="28"
+                        rx="14"
+                        fill="#59FF91"
+                      />
+                    </svg>
+                  </div>
+                  <div class="radio-inner">
+                    <input type="radio" name="color" id="cyan" />
+                    <svg
+                      width="40"
+                      height="40"
+                      viewBox="0 0 40 40"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <rect width="40" height="40" rx="20" fill="#2D3136" />
+                      <rect
+                        x="6"
+                        y="6"
+                        width="28"
+                        height="28"
+                        rx="14"
+                        fill="#59FFF9"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+
+              <div class="input-wrapper">
+                <label>Tema do evento</label>
+                <div class="theme-wrapper">
+                  <div class="theme-inner">
+                    <img src="./assets/images/Image.png" alt="" />
+                    <input type="radio" name="theme" id="birthday" />
+                    <label for="birthday">Aniversário</label>
+                  </div>
+
+                  <div class="theme-inner">
+                    <img src="./assets/images/Image-1.png" alt="" />
+                    <input type="radio" name="theme" id="kids" />
+                    <label for="kids">Infantil</label>
+                  </div>
+
+                  <div class="theme-inner">
+                    <img src="./assets/images/Image-2.png" alt="" />
+                    <input type="radio" name="theme" id="graduation" />
+                    <label for="graduation">Formatura</label>
+                  </div>
+
+                  <div class="theme-inner">
+                    <img src="./assets/images/Image-3.png" alt="" />
+                    <input type="radio" name="theme" id="marriage" />
+                    <label for="marriage">Casamento</label>
+                  </div>
+
+                  <div class="theme-inner">
+                    <img src="./assets/images/Image-4.png" alt="" />
+                    <input type="radio" name="theme" id="baby" />
+                    <label for="baby">Chá de bebê</label>
+                  </div>
+
+                  <div class="theme-inner">
+                    <img src="./assets/images/Image-5.png" alt="" />
+                    <input type="radio" name="theme" id="pan" />
+                    <label for="pan">Chá de panela</label>
+                  </div>
+
+                  <div class="theme-inner">
+                    <img src="./assets/images/Image-6.png" alt="" />
+                    <input type="radio" name="theme" id="carnival" />
+                    <label for="carnival">Carnaval</label>
+                  </div>
+
+                  <div class="theme-inner">
+                    <img src="./assets/images/Image-7.png" alt="" />
+                    <input type="radio" name="theme" id="easter" />
+                    <label for="easter">Páscoa</label>
+                  </div>
+
+                  <div class="theme-inner">
+                    <img src="./assets/images/Image-8.png" alt="" />
+                    <input type="radio" name="theme" id="saint-jhon" />
+                    <label for="saint-jhon">São João</label>
+                  </div>
+
+                  <div class="theme-inner">
+                    <img src="./assets/images/Image-9.png" alt="" />
+                    <input type="radio" name="theme" id="halloween" />
+                    <label for="halloween">Halloween</label>
+                  </div>
+
+                  <div class="theme-inner">
+                    <img src="./assets/images/Image-10.png" alt="" />
+                    <input type="radio" name="theme" id="christmas" />
+                    <label for="christmas">Natal</label>
+                  </div>
+
+                  <div class="theme-inner">
+                    <img src="./assets/images/Image-11.png" alt="" />
+                    <input type="radio" name="theme" id="other" />
+                    <label for="other">Outro</label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="end-customization">
+                <div class="style flex-1">
+                  <label>Estilo</label>
+                  <div class="dark">
+                    <label class="switch">
+                      <input type="checkbox" id="notificacao" />
+                      <span class="slider"></span>
+                    </label>
+                    <label for="notificacao">Escuro</label>
+                  </div>
+                </div>
+                <div class="cover-image flex-2">
+                  <label>Foto de capa</label>
+                  <div class="file-upload">
+                    <input type="file" id="file" />
+                    <label for="file">
+                      <svg
+                        width="32"
+                        height="32"
+                        viewBox="0 0 32 32"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M15.2929 3.29289C15.6834 2.90237 16.3166 2.90237 16.7071 3.29289L23.3738 9.95956C23.7643 10.3501 23.7643 10.9832 23.3738 11.3738C22.9832 11.7643 22.3501 11.7643 21.9596 11.3738L17 6.41421V20C17 20.5523 16.5523 21 16 21C15.4477 21 15 20.5523 15 20V6.41421L10.0404 11.3738C9.64992 11.7643 9.01675 11.7643 8.62623 11.3738C8.2357 10.9832 8.2357 10.3501 8.62623 9.95956L15.2929 3.29289ZM4 19C4.55228 19 5 19.4477 5 20V25.3333C5 25.7754 5.17559 26.1993 5.48816 26.5118C5.80072 26.8244 6.22464 27 6.66667 27H25.3333C25.7754 27 26.1993 26.8244 26.5118 26.5118C26.8244 26.1993 27 25.7754 27 25.3333V20C27 19.4477 27.4477 19 28 19C28.5523 19 29 19.4477 29 20V25.3333C29 26.3058 28.6137 27.2384 27.9261 27.9261C27.2384 28.6137 26.3058 29 25.3333 29H6.66667C5.69421 29 4.76157 28.6137 4.07394 27.9261C3.38631 27.2384 3 26.3058 3 25.3333V20C3 19.4477 3.44772 19 4 19Z"
+                          fill="white"
+                        />
+                      </svg>
+                      Selecionar
+                    </label>
+                    <div class="file-name"></div>
+                  </div>
+                </div>
               </div>
             </fieldset>
           </form>
