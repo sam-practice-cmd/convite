@@ -66,3 +66,8 @@ aside {
     }
   }
 }
+
+.line {
+  border: 1px solid var(--input-stroke);
+  margin-block: 3rem;
+}
