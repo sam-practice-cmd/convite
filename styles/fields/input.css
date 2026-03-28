@@ -34,7 +34,9 @@ input[type="date"]::placeholder {
 }
 
 input:focus,
-textarea:focus {
+textarea:focus,
+input:hover,
+textarea:hover {
   outline: 1px solid var(--brand-light);
 }
 
@@ -132,7 +134,7 @@ input:checked ~ .text::after {
 
   margin-bottom: 0;
 
-  &:hover{
+  &:hover {
     background-color: var(--shape-hover);
   }
 }
